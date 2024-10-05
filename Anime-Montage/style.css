@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -68,4 +67,19 @@ h1 {
 .list .item:has(+ * + * :hover )   {
     filter: brightness(0.3);
     transform: translateZ(25px) rotateY(-10deg) ;
+}
+
+@media  (max-width: 768px) {
+
+    main{
+         display: flex;
+         justify-content: center;
+    }
+    .list {
+        display: grid;
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr ;
+        gap: 25px;
+
+    }
 }
