@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image" href="8Tzrbzboc.webp">
+</head>
+<body>
+    <h1 class="centre-alignment margin-top">Currency Convertor <br> </h1>
+    <h3 class="centre-alignment margin-top"> Enter the amount to convert:</h3>
+
+    <div class="container centre-alignment margin-top-2">
+          <input type="number" id="amount" placeholder="enter your amount here">
+    </div>
+       
+    <div class="centre-alignment margin-top-2">
+        <h4>from</h4>
+    </div>
+
+    <div class="from centre-alignment margin-top-2" >
+     <img src="https://flagsapi.com/US/flat/64.png" id="from-img">
+         <select id="from-currency">
+            <!-- Options will be populated by JavaScript -->
+         </select> 
+    </div>
+
+    <div class="centre-alignment margin-top-2">
+        <button id="swap-btn" class="swap-button">⇅</button>
+    </div>
+
+    <div class="centre-alignment margin-top-2">
+        <h4>To</h4>
+    </div>
+
+   <div class="to country1 centre-alignment margin-top-2">
+       <img src="https://flagsapi.com/IN/flat/64.png" id="to-img">
+     <select id="to-currency" class="centre-alignment">
+        <!-- Options will be populated by JavaScript -->
+       </select> 
+     </div>
+ 
+    <div class="centre-alignment margin-top-2">
+       <button id="submit">Convert</button>
+    </div>
+
+    <div class="result centre-alignment margin-top-2" id="result">
+        <!-- Result will be displayed here -->
+    </div>
+
+    <div class="exchange-rate centre-alignment margin-top-1" id="exchange-rate">
+        <!-- Exchange rate info will be displayed here -->
+    </div>
+
+    <footer>
+            <p class="centre-alignment margin-top-3"> &copy; 2024 Currency Convertor</p>
+          <p class="centre-alignment margin-top-2">  м𝐚𝓭𝑒 𝔀Ɨ𝐓𝓱 ᒪØｖ𝑒❤ by  𝐀𝐝𝐢𝐭𝐲𝐚 𝐒𝐢𝐧𝐠𝐡</p>
+     </footer>
+     
+ <script src="countryCode.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
