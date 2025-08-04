@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edubuddy</title>
-
+    <title>EduBuddy - The Future of Education</title>
+    <meta name="description" content="EduBuddy - Revolutionary educational platform for students and faculty with AI-powered tools and modern learning solutions.">
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <div id="loading" class="loading-screen">
-        <img src="https://imgs.search.brave.com/QxYVfVGWtcNDQLl1NjpTV9ho7cgEvmBiVhnpHJZL8JQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lZHVi/dWRkeWRhdGEuYmxv/Yi5jb3JlLndpbmRv/d3MubmV0L3Byb2pl/Y3QtaW1hZ2VzL2xv/Z28ucG5n" alt="Loading" class="loader-image">
-        <h1>The future of Education.</h1>
+        <div class="loader-container">
+            <img src="https://imgs.search.brave.com/QxYVfVGWtcNDQLl1NjpTV9ho7cgEvmBiVhnpHJZL8JQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lZHVi/dWRkeWRhdGEuYmxv/Yi5jb3JlLndpbmRv/d3MubmV0L3Byb2pl/Y3QtaW1hZ2VzL2xv/Z28ucG5n" alt="EduBuddy Logo" class="loader-image">
+            <h1 class="loading-title">The Future of Education</h1>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
     </div>
 
     <!-- <div id="content" class="content" style="display: none;">
@@ -24,8 +38,8 @@
     </div> -->
 
     <!-- navbar -->
-    <nav id="content" class="navbar navbar-expand-sm navbar-dark bg-dark content" aria-label="Third navbar example" style="display: none;">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" aria-label="Main navigation">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://imgs.search.brave.com/QxYVfVGWtcNDQLl1NjpTV9ho7cgEvmBiVhnpHJZL8JQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lZHVi/dWRkeWRhdGEuYmxv/Yi5jb3JlLndpbmRv/d3MubmV0L3Byb2pl/Y3QtaW1hZ2VzL2xv/Z28ucG5n" alt="Edubuddy"  height="70" class="d-inline-block align-text-center">
                 EduBuddy
@@ -63,65 +77,332 @@
         </div>
       </nav>
 
- <!-- navbar ends -->
-    
-     <!-- <div id="content" class="content" style="display: none;">
-      
-    </div> -->
-    
- <div id="content" class="card content align-center "  >
-    <img src="https://imgs.search.brave.com/O0xaL7puE4YZq_5ZoNElhDtGMbxzZagK0GyOiDReV0U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzYzLzUzLzUz/LzM2MF9GXzU2MzUz/NTMwOV9HMEkxNnR6/UlQ1cTZuMnFwYmdC/OUhBSWlrQ1BzVXRC/Zi5qcGc" class="card-img-top" alt="Card image">
-    <div class="card-body">
-        <h5 class="card-title">Student-Login</h5>
-        <p class="card-text">Login here if you are a Student .</p>
-        <a href="#" class="btn btn-primary">Login</a>
+    <!-- Main Content -->
+    <main id="content" class="main-content" style="display: none;">
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title">Welcome to <span class="text-primary">EduBuddy</span></h1>
+                        <p class="hero-subtitle">Revolutionizing education with AI-powered learning solutions for students and educators worldwide.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg me-3 mb-2" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+                                <i class="fas fa-rocket me-2"></i>Get Started
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg mb-2">
+                                <i class="fas fa-play me-2"></i>Watch Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3" alt="Students learning" class="img-fluid rounded-3 shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Cards Section -->
+        <section class="login-section py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col">
+                        <h2 class="section-title">Choose Your Portal</h2>
+                        <p class="section-subtitle">Access your personalized learning dashboard</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <!-- Student Login Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card login-card h-100 shadow-sm">
+                            <div class="card-img-container">
+                                <img src="https://imgs.search.brave.com/O0xaL7puE4YZq_5ZoNElhDtGMbxzZagK0GyOiDReV0U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzYzLzUzLzUz/LzM2MF9GXzU2MzUz/NTMwOV9HMEkxNnR6/UlQ1cTZuMnFwYmdC/OUhBSWlrQ1BzVXRC/Zi5qcGc" class="card-img-top" alt="Student">
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <h5 class="card-title">Student Portal</h5>
+                                <p class="card-text">Access your courses, assignments, grades, and AI-powered study tools.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#studentLoginModal">
+                                    <i class="fas fa-sign-in-alt me-2"></i>Login
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Staff Login Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card login-card h-100 shadow-sm">
+                            <div class="card-img-container">
+                                <img src="https://img.freepik.com/free-vector/hand-drawn-black-teacher-clipart-illustration_23-2150923186.jpg?ga=GA1.1.863746107.1728496035&semt=ais_hybrid" class="card-img-top" alt="Teacher">
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <h5 class="card-title">Faculty Portal</h5>
+                                <p class="card-text">Manage classes, create content, track student progress, and utilize teaching tools.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staffLoginModal">
+                                    <i class="fas fa-sign-in-alt me-2"></i>Login
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Password Recovery Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card login-card h-100 shadow-sm">
+                            <div class="card-img-container">
+                                <img src="https://imgs.search.brave.com/psPJLPpFF9j_p2UTrGjVfDWpGKVBhgChQEDsWhQkcNk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzQxLzU5Lzg0/LzM2MF9GXzk0MTU5/ODQ2MV9DYUtXVUgy/NWRYWTI0eXZNR3Aw/b20zS2ZnaTRLdU1E/WC5qcGc" class="card-img-top" alt="Password Recovery">
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <h5 class="card-title">Account Recovery</h5>
+                                <p class="card-text">Forgot your password? No worries! We'll help you recover your account securely.</p>
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#recoveryModal">
+                                    <i class="fas fa-unlock-alt me-2"></i>Recover Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section py-5 bg-light">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col">
+                        <h2 class="section-title">Why Choose EduBuddy?</h2>
+                        <p class="section-subtitle">Discover the features that make learning extraordinary</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h5>AI-Powered Learning</h5>
+                            <p>Personalized study plans and intelligent tutoring systems.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h5>Mobile Friendly</h5>
+                            <p>Learn anywhere, anytime with our responsive platform.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5>Progress Tracking</h5>
+                            <p>Real-time analytics and performance insights.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5>Collaborative Tools</h5>
+                            <p>Connect and collaborate with peers and instructors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand">
+                    <img src="https://imgs.search.brave.com/QxYVfVGWtcNDQLl1NjpTV9ho7cgEvmBiVhnpHJZL8JQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lZHVi/dWRkeWRhdGEuYmxv/Yi5jb3JlLndpbmRv/d3MubmV0L3Byb2pl/Y3QtaW1hZ2VzL2xv/Z28ucG5n" alt="EduBuddy" height="40" class="mb-3">
+                    <h5 class="text-white mb-3">EduBuddy</h5>
+                    <p class="text-white-50">Transforming education through innovative technology and personalized learning experiences.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white mb-3">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white mb-3">Features</h6>
+                <ul class="footer-links">
+                    <li><a href="#">AI Tools</a></li>
+                    <li><a href="#">Copilot</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Mobile App</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white mb-3">Support</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white mb-3">Connect</h6>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-white-50 mb-0">&copy; 2024 EduBuddy. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="text-white-50 mb-0">Made with <i class="fas fa-heart text-danger"></i> for education</p><br>By Aditya Singh
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modals -->
+<!-- Get Started Modal -->
+<div class="modal fade" id="getStartedModal" tabindex="-1" aria-labelledby="getStartedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="getStartedModalLabel">Get Started with EduBuddy</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Welcome to EduBuddy! Choose how you'd like to get started:</p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#studentLoginModal" data-bs-dismiss="modal">
+                        <i class="fas fa-user-graduate me-2"></i>I'm a Student
+                    </button>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staffLoginModal" data-bs-dismiss="modal">
+                        <i class="fas fa-chalkboard-teacher me-2"></i>I'm an Educator
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
- <div id="content" class="card content align-center "  >
-    <img src="https://img.freepik.com/free-vector/hand-drawn-black-teacher-clipart-illustration_23-2150923186.jpg?ga=GA1.1.863746107.1728496035&semt=ais_hybrid" class="card-img-top" alt="Card image">
-    <div class="card-body">
-        <h5 class="card-title">Staff-Login</h5>
-        <p class="card-text">Login here if you are a staff or faculty .</p>
-        <a href="#" class="btn btn-primary">Login</a>
+<!-- Student Login Modal -->
+<div class="modal fade" id="studentLoginModal" tabindex="-1" aria-labelledby="studentLoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="studentLoginModalLabel"><i class="fas fa-user-graduate me-2"></i>Student Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="studentEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="studentEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="studentPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="studentPassword" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#recoveryModal" data-bs-dismiss="modal">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
- <div id="content" class="card content align-center "  >
-    <img src="https://imgs.search.brave.com/psPJLPpFF9j_p2UTrGjVfDWpGKVBhgChQEDsWhQkcNk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzQxLzU5Lzg0/LzM2MF9GXzk0MTU5/ODQ2MV9DYUtXVUgy/NWRYWTI0eXZNR3Aw/b20zS2ZnaTRLdU1E/WC5qcGc" class="card-img-top" alt="Card image">
-    <div class="card-body">
-        <h5 class="card-title">Forgot-Password</h5>
-        <p class="card-text">No worries we got your back. Retrive your  password Now . </p>
-        <a href="#" class="btn btn-primary">Retrive Now</a>
+<!-- Staff Login Modal -->
+<div class="modal fade" id="staffLoginModal" tabindex="-1" aria-labelledby="staffLoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staffLoginModalLabel"><i class="fas fa-chalkboard-teacher me-2"></i>Faculty Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="staffEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="staffEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="staffPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="staffPassword" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="staffId" class="form-label">Staff ID</label>
+                        <input type="text" class="form-control" id="staffId" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#recoveryModal" data-bs-dismiss="modal">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- footor -->
- <div class="footr">
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+<!-- Recovery Modal -->
+<div class="modal fade" id="recoveryModal" tabindex="-1" aria-labelledby="recoveryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="recoveryModalLabel"><i class="fas fa-key me-2"></i>Account Recovery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Enter your email address and we'll send you a link to reset your password.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="recoveryEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="recoveryEmail" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Send Recovery Link</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-
-  </footer>
-<div class="end">
-    <p style="font-size: larger;"> connect with us</p>
-    <svg xmlns="http://www.w3.org/2000/svg"  height="35" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-      </svg>
-
-      <svg xmlns="http://www.w3.org/2000/svg"  height="35" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-      </svg>
-
-      <svg xmlns="http://www.w3.org/2000/svg"  height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-      </svg>
-
-</div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
